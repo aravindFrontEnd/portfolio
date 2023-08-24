@@ -16,11 +16,12 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Hi, I'm <span className='text-[#915EFF]'>Aravind</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            I am ReactJS dev <br className='sm:block hidden' />
+            I develop <br className='sm:block hidden' />
+            web applications
           </p>
         </div>
       </div>
@@ -37,7 +38,7 @@ const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
@@ -45,7 +46,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
-  );
+  )
 };
 
 export default Hero;

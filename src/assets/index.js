@@ -20,18 +20,27 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import adobe from "./tech/adobe.png";
+import nextjs from "./tech/nextjs.png";
+import postgres from "./tech/postgres.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import TCS from "./company/TCS.svg";
+import epsilonlogo from './company/epsilonlogo.svg'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+
+import movieapp from "./movieapp.jpg";
+import spacex from "./spacex.jpg";
+import fitness from "./fitness.png";
+
 export {
   logo,
+  movieapp,
+  spacex,
+  fitness,
   backend,
   creator,
   mobile,
@@ -52,11 +61,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
-};
+  adobe,
+  TCS,
+  epsilonlogo,
+  nextjs,
+  postgres,
+}

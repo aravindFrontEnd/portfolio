@@ -10,20 +10,20 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
+  nextjs,
+  postgres,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
-} from "../assets";
+  epsilonlogo,
+  TCS,
+  movieapp,
+  spacex,
+  fitness,
+} from '../assets'
 
 export const navLinks = [
   {
@@ -42,15 +42,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "React Js Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Javascript Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Email Developer",
     icon: backend,
   },
   {
@@ -61,113 +61,84 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: 'HTML 5',
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: 'CSS 3',
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: 'React JS',
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: 'Next Js',
+    icon: nextjs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: 'PostgreSQL',
+    icon: postgres,
   },
   {
-    name: "Three JS",
+    name: 'Three JS',
     icon: threejs,
   },
   {
-    name: "git",
+    name: 'git',
     icon: git,
   },
   {
-    name: "figma",
+    name: 'figma',
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+]
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: 'React.js Developer',
+    company_name: 'Epsilon',
+    icon: epsilonlogo,
+    iconBg: '#383E56',
+    date: 'Sep 2021 - Current',
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: 'UI Developer',
+    company_name: 'Tata Consultancy Services',
+    icon: TCS,
+    iconBg: '#E6DEDD',
+    date: 'Jun 2018 - Sep 2021',
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
+
+]
 
 const testimonials = [
   {
@@ -176,7 +147,7 @@ const testimonials = [
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
   },
   {
     testimonial:
@@ -184,82 +155,81 @@ const testimonials = [
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "TCS",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: 'Movie booking App',
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      'Web-based platform that allows users to search, book movies ans select seats.',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'javascript',
+        color: 'blue-text-gradient',
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: 'CSS',
+        color: 'green-text-gradient',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: 'Animations',
+        color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: movieapp,
+    source_code_link: 'https://movie-booking-app-js.netlify.app/',
   },
   {
-    name: "Job IT",
+    name: 'Fitenss App',
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      'Web application that enables users to search for different GYM plans and different workouts.',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'CSS',
+        color: 'blue-text-gradient',
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: 'Javascript',
+        color: 'green-text-gradient',
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: 'ReactJS',
+        color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: fitness,
+    source_code_link: 'https://bestfit.netlify.app/',
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: 'Space-X clone',
+    description: 'Space-X clone - mocked the existing website.',
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: 'nextjs',
+        color: 'blue-text-gradient',
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: 'reactjs',
+        color: 'green-text-gradient',
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: 'css',
+        color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: spacex,
+    source_code_link: 'https://clone-spacex.netlify.app/',
   },
-];
+]
 
 export { services, technologies, experiences, testimonials, projects };
