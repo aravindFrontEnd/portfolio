@@ -37,31 +37,31 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Aravind Ganesh",
+          to_name: 'Aravind Ganesh',
           from_email: form.email,
-          to_email: "aravinduni5@gmail.com",
+          to_email: 'aravinduni5@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'QPnBHRTrXKA5O8He0'
       )
       .then(
         () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setLoading(false)
+          alert('Thank you. I will get back to you as soon as possible.')
 
           setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+            name: '',
+            email: '',
+            message: '',
+          })
         },
         (error) => {
-          setLoading(false);
-          console.error(error);
+          setLoading(false)
+          console.error(error)
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert('Ahh, something went wrong. Please try again.')
         }
-      );
+      )
   };
 
   return (
