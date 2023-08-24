@@ -34,7 +34,7 @@ const Contact = () => {
     emailjs
       .send(
         'service_pyvtiki',
-        'template_swnvre8'
+        'template_swnvre8',
         {
           from_name: form.name,
           to_name: 'Aravind Ganesh',
