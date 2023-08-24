@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_pyvtiki',
+        'template_swnvre8'
         {
           from_name: form.name,
           to_name: 'Aravind Ganesh',
